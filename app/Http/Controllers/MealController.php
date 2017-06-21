@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class MealController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
@@ -24,6 +25,7 @@ class MealController extends Controller
     public function create()
     {
         //
+        return view('meals.create');
     }
 
     /**

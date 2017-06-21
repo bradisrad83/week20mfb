@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/meals', 'MealController@create', function(){})->middleware('auth');
+
+Route::post('/addMeal', 'MealController@store', function(){})->middleware('auth');
